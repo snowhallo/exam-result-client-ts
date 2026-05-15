@@ -1,0 +1,40 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tra cứu điểm thi đại học </title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Tra cứu điểm thi Đại học</h1>
+        </header>
+
+        <section class="controls">
+            <input type="text" id="searchInput" placeholder="Nhập tên trường mà bạn muốn tìm kiếm (VD: Bách khoa)" />
+            <select id="provinceFilter">
+                <option value="All">Tất cả các tỉnh</option>
+                <option value="Hà Nội">Hà Nội</option>
+                <option value="TP.HCM">TP.HCM</option>
+            </select>
+        </section>
+
+        <main class="Layout">
+            <div class="schoolListContainer">
+                <h2>Danh sách trường</h2>
+                <ul id="schoolList" class="school-list"></ul>
+            </div>
+
+            <div class="school-detail-container">
+                <div id="schoolDetail">
+                    <p class="placeholder-text">Vui lòng chọn một trường từ danh sách để xem chi tiết</p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script type="module" src="./src/main.ts"></script>
+</body>
+
+</html>

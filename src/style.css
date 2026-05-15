@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #9f224e;
+}
+
+.controls {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.controls input, .controls select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.controls input {
+    flex: 1;
+}
+
+.layout {
+    display: flex;
+    gap: 20px;
+}
+
+.school-list-container {
+    flex: 1;
+    background: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+.school-list {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.school-item {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.school-item:hover, .school-item.active {
+    background-color: #f0f4f8;
+    border-left: 4px solid #9f224e;
+}
+
+.school-item h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #1a1a1a;
+}
+
+.school-item p {
+    font-size: 14px;
+    color: #666;
+}
+
+.school-detail-container {
+    flex: 2;
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.placeholder-text {
+    text-align: center;
+    color: #888;
+    margin-top: 50px;
+}
+
+.detail-header {
+    border-bottom: 2px solid #9f224e;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.detail-header h2 {
+    color: #9f224e;
+    margin-bottom: 10px;
+}
+
+.major-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.major-table th, .major-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.major-table th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+
+.major-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.score-col {
+    color: #d92550;
+    font-weight: bold;
+}
